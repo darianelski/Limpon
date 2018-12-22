@@ -167,6 +167,8 @@
     </div>
 
     <div class="page-stat">
+        <div class="object-circle"></div>
+        <div class="object-rhombus"></div>
         <div class="wrap">
             <h2 class="section-title"><span>Fun Facts</span>Some Fun Facts About Dashboard</h2>
             <ul class="list-stat">
@@ -180,6 +182,7 @@
 
     <div class="page-app">
         <div class="wrap">
+            <p class="intro">Intro</p>
             <div class="page-app-flex">
                 <div>
                     <h2 class="section-title">Meet With Future Landingpage</h2>
@@ -316,19 +319,91 @@
         <div class="wrap">
             <h2 class="section-title section-title-small"><span>angels</span>Our Team</h2>
             <div class="box-team">
-                <div>
-                    <p>founder</p>
-                    <p>Ricardo T. Obrien</p>
+                <div class="box-team-item">
+                    <img class="avatar" src="img/team/person1.jpg" alt="">
+                    <p class="position">founder</p>
+                    <p class="name">Ricardo T. Obrien</p>
+                    <button type="button" class="social-team-item btn-more btn-more-1"> <i class="icon icon-plus"></i></button>
+                    <ul class="social-team social-team-1" style="display: none;">
+                        <li>
+                            <a href="" class="social-team-item" target="_blank">
+                                <i class="icon icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-team-item" target="_blank">
+                                <i class="icon icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-team-item" target="_blank">
+                                <i class="icon icon-behance"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-team-item" target="_blank">
+                                <i class="icon icon-chrome"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div>
-                    <p>ceo</p>
-                    <p>Alberto Del Rio</p>
+                <div class="box-team-item">
+                    <img class="avatar" src="img/team/person2.jpg" alt="">
+                    <p class="position">ceo</p>
+                    <p class="name">Alberto Del Rio</p>
+                    <button type="button" class="social-team-item btn-more btn-more-2"> <i class="icon icon-plus"></i></button>
+                    <ul class="social-team social-team-2" style="display: none;">
+                        <li>
+                            <a href="" class="social-team-item" target="_blank">
+                                <i class="icon icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-team-item" target="_blank">
+                                <i class="icon icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-team-item" target="_blank">
+                                <i class="icon icon-behance"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-team-item" target="_blank">
+                                <i class="icon icon-chrome"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div>
-                    <p>designer</p>
-                    <p>Thomas Alva Adison</p>
+                <div class="box-team-item">
+                    <img class="avatar" src="img/team/person3.jpg" alt="">
+                    <p class="position">designer</p>
+                    <p class="name">Thomas Alva Adison</p>
+                    <button type="button" class="social-team-item btn-more btn-more-3"> <i class="icon icon-plus"></i></button>
+                    <ul class="social-team social-team-3" style="display: none;">
+                        <li>
+                            <a href="" class="social-team-item" target="_blank">
+                                <i class="icon icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-team-item" target="_blank">
+                                <i class="icon icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-team-item" target="_blank">
+                                <i class="icon icon-behance"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-team-item" target="_blank">
+                                <i class="icon icon-chrome"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -358,6 +433,26 @@
             </ul>
         </div>
     </div>
-    
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-more-1").click(function(){
+                $(".btn-more-1").hide();
+                $(".social-team-1").fadeIn();
+            });
+            $(".btn-more-2").click(function(){
+                $(".btn-more-2").hide();
+                $(".social-team-2").fadeIn();
+            });
+            $(".btn-more-3").click(function(){
+                $(".btn-more-3").hide();
+                $(".social-team-3").fadeIn();
+            });
+        });
+    </script>
 </body>
 </html>
