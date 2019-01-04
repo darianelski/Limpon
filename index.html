@@ -36,6 +36,7 @@
                 <li><a href="" class="nav-item">team</a></li>
                 <li><a href="#" class="btn btn-primary btn-free">free trail</a></li>
             </ul>
+            <button class="btn-menu" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 53"><path d="M2 13.5h49a2 2 0 0 0 0-4H2a2 2 0 0 0 0 4zM2 28.5h49a2 2 0 0 0 0-4H2a2 2 0 0 0 0 4zM2 43.5h49a2 2 0 0 0 0-4H2a2 2 0 0 0 0 4z"/></svg></button>
         </div>
 
         <div class="wrap">
@@ -441,6 +442,18 @@
             </ul>
         </div>
     </div>
+    <div class="modal">
+        <button type="button" class="btn-close"> <span>&times;</span> </button>
+        <ul class="nav-modal">                                      
+            <li><a href="" class="nav-item">Home</a></li>
+            <li><a href="" class="nav-item">Features</a></li> 
+            <li><a href="" class="nav-item">Video</a></li>
+            <li><a href="" class="nav-item">Screens</a></li>
+            <li><a href="" class="nav-item">Pricing</a></li>
+            <li><a href="" class="nav-item">team</a></li>
+            <li><a href="#" class="btn btn-primary btn-free">free trail</a></li>
+        </ul>
+    </div>
     <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -459,6 +472,12 @@
             $(".btn-more-3").click(function(){
                 $(".btn-more-3").hide();
                 $(".social-team-3").fadeIn();
+            });
+            $(".btn-menu").click(function(){
+                $(".modal").show();
+            });
+            $(".btn-close").click(function(){
+                $(".modal").hide();
             });
         });
     </script>
