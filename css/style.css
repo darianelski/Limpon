@@ -832,19 +832,10 @@ h2 span {
 
 .page-app-img {
     position: absolute;
-    top: 7%;
-    right: 12%;
+    top: 8%;
+    right: 12.3%;
 }
-.page-app-img .play {
-    position: absolute;
-    top: 40%;
-    left: 37%;
-    transform: translate(-50%; -50%);
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
-}
+
 .page-app-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -885,6 +876,9 @@ h2 span {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+}
+.page-analytics-btn:hover {
+    background-color: #edf6ff;
 }
 .page-analytics .section-title {
     margin-bottom: 25px;
@@ -1658,11 +1652,35 @@ h2 span {
     }
 }
 @media (max-width: 575px) {
+    .logo {
+        background-size: cover;
+        width: 159px;
+        height: 43px;
+    }
+    .btn-menu {
+        margin-top: -26px;
+    }
+    .list-company {
+        
+    }
     .company-one, .company-two, .company-three, .company-four {
-        flex-basis: 100%;
+        flex-basis: 150px;
+        width: 150px;
+        height: 44px;
+        background-size: cover;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .company-two {
+        width: 140px;
+        flex-basis: 150px;
+        height: 52px;
     }
     .company-three {
-        margin-bottom: 30px;
+        height: 34px;
+    }
+    .company-four {
+        margin-bottom: 0;
     }
     .grid {
         grid-template-areas: "a"
@@ -1734,10 +1752,6 @@ h2 span {
         right: 0;
         width: 80%;
     }
-    .page-app-img .play {
-        top: 25%;
-        left: 44%;
-    }
     .box-clients-item {
         padding: 15px 20px;
     }
@@ -1769,5 +1783,42 @@ h2 span {
     }
     .social li {
         margin-left: 0;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .section-title {
+        font-size: 27px;
+    }
+    .page-app-img {
+        width: 70%;
+        margin: auto;
+        left: 0;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    .box-price-item .btn {
+        position: relative;
+        z-index: 2;
+    }
+    .box-team-item {
+        max-width: 280px;
+    }
+    .box-team-item .name {
+        margin-bottom: 10px;
+        font-size: 23px;
+    }
+    .box-team-item .position {
+        font-size: 12px;
+    }
+    .btn-free {
+        padding: 14px 0;
+    }
+    .modal {
+        max-width: 280px;
     }
 }
